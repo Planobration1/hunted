@@ -1,0 +1,43 @@
+
+#home-baby{
+  min-height: auto;
+  height: calc(100vh - 80px);
+}
+
+#home-baby::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+#home-baby h1{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 100%; */
+  letter-spacing: 1px;
+  font-family: 'Akira';
+  font-size: 64px;
+  font-size: 4rem;
+  line-height: 72px;
+  z-index: 2;
+}
+
+#home-baby img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+@media screen and (max-width: 992px) {
+  #home-baby h1 {
+    top: 35%;
+  }
+}
